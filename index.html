@@ -1,0 +1,63 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vidto Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="profile">
+      <img src="assets/logo.png" alt="Profile" class="profile-img">
+    </div>
+    <div class="settings">
+      <a href="settings.html">⚙️</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- User Form (shown only first time) -->
+    <div id="user-form" class="form-container">
+      <h2>Welcome to Vidto Studio</h2>
+      <input type="text" id="username" placeholder="Your Name" />
+      <button onclick="saveUser()">Continue</button>
+    </div>
+
+    <!-- Latest Video -->
+    <section id="latest-video" class="section">
+      <h3>📌 Latest Upload</h3>
+      <div id="latest-video-container"></div>
+    </section>
+
+    <!-- Long Videos Section -->
+    <section class="section">
+      <h3>🎥 Long Videos</h3>
+      <div class="video-scroll" id="long-videos"></div>
+    </section>
+
+    <!-- Shorts Section -->
+    <section class="section">
+      <h3>⚡ Shorts</h3>
+      <div class="video-scroll" id="short-videos"></div>
+    </section>
+
+    <!-- All Long Videos -->
+    <section class="section">
+      <h3>📚 All Long Videos</h3>
+      <div class="video-scroll" id="all-long"></div>
+    </section>
+
+    <!-- All Shorts -->
+    <section class="section">
+      <h3>🎞️ All Shorts</h3>
+      <div class="video-scroll" id="all-shorts"></div>
+    </section>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
