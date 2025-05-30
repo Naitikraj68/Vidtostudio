@@ -1,0 +1,68 @@
+<!-- settings.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Settings | Vidto Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body.dark {
+      background: #111;
+      color: #f4f4f4;
+    }
+
+    .section input, .section textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .section button {
+      padding: 10px 15px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div>
+      <a href="index.html" style="text-decoration:none;">← Back</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <h2>⚙️ Settings</h2>
+
+    <section>
+      <h3>🌓 Theme</h3>
+      <button onclick="toggleTheme()">Toggle Theme</button>
+    </section>
+
+    <section>
+      <h3>ℹ️ About</h3>
+      <p>This platform showcases the latest videos from Vidto Studio in an app-style layout. Built with love for our audience.</p>
+    </section>
+
+    <section>
+      <h3>📬 Contact Us</h3>
+      <p>Email: <a href="mailto:contact@vidtostudio.com">contact@vidtostudio.com</a></p>
+    </section>
+
+    <section>
+      <h3>✍️ Feedback</h3>
+      <textarea rows="4" placeholder="Write your feedback here..."></textarea>
+      <br>
+      <button onclick="alert('Thank you for your feedback!')">Submit</button>
+    </section>
+  </main>
+
+  <script src="js/settings.js"></script>
+</body>
+      </html
